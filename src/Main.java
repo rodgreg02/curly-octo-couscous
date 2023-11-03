@@ -74,38 +74,40 @@ public class Main {
                     }
                     break;
                 case 3:
-                            while (!quit2){
-                                System.out.println("Toaster:");
-                                System.out.println("1)Turn on/off\n2)Set temperature\n3)Toast\n0) Quit");
-                                int choose = input.nextInt();
-                                switch (choose) {
-                                    case 1:
-                                        if (toaster.isOn) {
-                                            toaster.coolDown();
-                                        }
-                                        toaster.turnOnOff(toaster.isOn);
-                                        break;
-                                    case 2:
-                                        toaster.defineTemp(toaster.isOn);
-                                        break;
-                                    case 3:
-                                        toaster.toast(toaster.isOn, toaster.setTimer());
-                                        break;
-                                    case 0:
-                                        quit2 = true;
-                                        break;
-                                    default:
-                                        System.out.println("Irmau, então? é de 1-3? não muito complicado né");
-                                        break;
+                    while (!quit2) {
+                        System.out.println("Toaster:");
+                        System.out.println("1)Turn on/off\n2)Set temperature\n3)Toast\n0) Quit");
+                        int choose = input.nextInt();
+                        switch (choose) {
+                            case 1:
+                                if (toaster.isOn) {
+                                    toaster.coolDown();
                                 }
+                                toaster.turnOnOff(toaster.isOn);
+                                break;
+                            case 2:
+                                toaster.defineTemp(toaster.isOn);
+                                break;
+                            case 3:
+                                toaster.toast(toaster.isOn, toaster.setTimer());
+                                break;
+                            case 0:
+                                quit2 = true;
+                                break;
+                            default:
+                                System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                                break;
+                        }
 
-                            }
-                            break;
-                        case 0:
-                            quit = true;
-                            break;
-                        default:
-                            break;
-                        
+                    }dd
+                    break;
+                case 0:
+                    quit = true;
+                    break;
+                default:
+                    break;
+
             }
         }
+    }
+}
