@@ -9,7 +9,7 @@ public class Toaster extends Eletro{
                 try {
                     TimeUnit.SECONDS.sleep(1);
                     timer--;
-                    System.out.println(timer + "Seconds");
+                    System.out.println(timer + " Seconds");
                     if (timer==0){
                         System.out.println("Tira as tuas torradas e siga comer hehehhe! 🍞");
                     }

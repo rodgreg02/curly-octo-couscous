@@ -74,7 +74,7 @@ public class Main {
                     }
                     break;
                 case 3:
-                    while (!quit2) {
+                    while (!quit3) {
                         System.out.println("Toaster:");
                         System.out.println("1)Turn on/off\n2)Set temperature\n3)Toast\n0) Quit");
                         int choose = input.nextInt();
@@ -92,14 +92,14 @@ public class Main {
                                 toaster.toast(toaster.isOn, toaster.setTimer());
                                 break;
                             case 0:
-                                quit2 = true;
+                                quit3 = true;
                                 break;
                             default:
                                 System.out.println("Irmau, então? é de 1-3? não muito complicado né");
                                 break;
                         }
 
-                    }dd
+                    }
                     break;
                 case 0:
                     quit = true;
