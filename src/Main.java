@@ -3,7 +3,6 @@ import java.io.Console;
 
 public class Main {
     public static void main(String[] args) {
-        Console console = System.console();
         boolean quit = false;
         boolean quit1 = false;
         boolean quit2 = false;
@@ -43,16 +42,43 @@ public class Main {
                                 break;
                         }
                     }
-                        break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
-                        case 0:
-                            quit = true;
-                            break;
-                        default:
-                            break;
+                    break;
+                case 2:
+                    while (!quit2) {
+                        System.out.println("Heater:");
+                        System.out.println("1)Turn on/off\n2)Set temperature\n3)Heat\n4)CoolDown\n0) Quit");
+                        switch (input.nextInt()) {
+                            case 1:
+                                if (heater.isOn) {
+                                    heater.coolDown();
+                                }
+                                heater.turnOnOff(heater.isOn);
+                                break;
+                            case 2:
+                                heater.defineTemp(heater.isOn);
+                                break;
+                            case 3:
+                                heater.heat(heater.isOn, heater.setTimer());
+                                break;
+                            case 4:
+                                heater.coolDown(heater.isOn, heater.currentTemp);
+                                break;
+                            case 0:
+                                quit2 = true;
+                                break;
+                            default:
+                                System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                                break;
+                        }
+                    }
+                    break;
+                case 3:
+                    break;
+                case 0:
+                    quit = true;
+                    break;
+                default:
+                    break;
 
             }
 /*
