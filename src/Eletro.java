@@ -53,8 +53,13 @@ public class Eletro {
 
 
     public void coolDown() {
-        this.currentTemp = 0;
-        System.out.println("Cooled down, usable again. beep boop.");
+        while(this.currentTemp != 0) {
+            this.currentTemp -= 5;
+            System.out.println(this.currentTemp);
+        }
+            System.out.println("Cooled down, usable again. beep boop.");
+            return;
+
     }
 
     public int setTimer() {
