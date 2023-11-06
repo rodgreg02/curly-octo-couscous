@@ -104,6 +104,7 @@ public class Main {
                     quit = true;
                     break;
                 default:
+                    System.out.println("Irmau, então? é de 1-3? não muito complicado né");
                     break;
 
             }
