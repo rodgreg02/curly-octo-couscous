@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.Console;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,7 +37,7 @@ public class Main {
                                 quit1 = true;
                                 break;
                             default:
-                                System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                                System.out.println("Mc Juão > Irmau, então? é de 1-3? não muito complicado né");
                                 break;
                         }
                     }
@@ -67,7 +66,7 @@ public class Main {
                                 quit2 = true;
                                 break;
                             default:
-                                System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                                System.out.println("Mc Juão > Irmau, então? é de 1-3? não muito complicado né");
                                 break;
                         }
                     }
@@ -94,7 +93,7 @@ public class Main {
                                 quit3 = true;
                                 break;
                             default:
-                                System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                                System.out.println("Mc Juão > Irmau, então? é de 1-3? não muito complicado né");
                                 break;
                         }
 
@@ -104,7 +103,7 @@ public class Main {
                     quit = true;
                     break;
                 default:
-                    System.out.println("Irmau, então? é de 1-3? não muito complicado né");
+                    System.out.println("Mc Juão > Irmau, então? é de 1-3? não muito complicado né");
                     break;
 
             }

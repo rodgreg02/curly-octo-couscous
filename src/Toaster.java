@@ -11,7 +11,7 @@ public class Toaster extends Eletro{
                     timer--;
                     System.out.println(timer + " Seconds");
                     if (timer==0){
-                        System.out.println("Tira as tuas torradas e siga comer hehehhe! 🍞");
+                        System.out.println("Mc NikiNiki > Tira as tuas torradas e siga comer hehehhe! 🍞");
                     }
                 } catch (InterruptedException e) {
                  Thread.currentThread().interrupt();
@@ -19,7 +19,7 @@ public class Toaster extends Eletro{
             }
         }
         else{
-            System.out.println("MC NIKINIKI liga isso!.");
+            System.out.println("MC NIKINIKI > liga isso!.");
         }
     }
 

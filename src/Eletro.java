@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+
 
 public class Eletro {
     int tempMax = 300;
@@ -37,7 +37,7 @@ public class Eletro {
                 heatUp(this.tempMax);
             }
         } else {
-            System.out.println("É ligar o aparelho primero, Irmau");
+            System.out.println("Mc Juão > É ligar o aparelho primero, Irmau");
         }
         return 0;
     }
